@@ -1,0 +1,130 @@
+/* ServiceDetail.css */
+.service-detail-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: url('../assets/images/service-bg.jpg') no-repeat center center/cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.back-button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: #e64a19;
+}
+
+.service-detail-title {
+  font-size: 32px;
+  color: #fff;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.service-detail-image {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.service-detail-description,
+.service-detail-text {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.service-detail-head {
+  font-size: 26px;
+  color: #ffeb3b;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul li {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+  padding-left: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+ul li::before {
+  content: '\2713'; /* Checkmark symbol */
+  position: absolute;
+  left: 0;
+  color: #ffeb3b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-detail-container {
+    padding: 15px;
+    margin: 20px;
+  }
+  .service-detail-title {
+    font-size: 28px;
+  }
+  .service-detail-description,
+  .service-detail-text {
+    font-size: 18px;
+  }
+  ul li {
+    font-size: 18px;
+  }
+  .back-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .service-detail-image,
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

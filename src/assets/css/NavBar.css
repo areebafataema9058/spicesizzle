@@ -1,0 +1,81 @@
+/* NavBar.css */
+.navbar {
+  background-color:black;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: grey;
+}
+
+/* Mobile Menu */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color:black;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.mobile-menu a:hover {
+  background-color: grey;
+  color: black;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  
+  .menu-button {
+    display: block;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}

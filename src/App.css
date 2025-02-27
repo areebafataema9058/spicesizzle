@@ -1,0 +1,20 @@
+/* Global Styles - Apply Background to All Pages */
+body {
+  background-image: url("./assets/images/background.jpg"); /* Adjust path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+/* If you use a wrapper div in App.js, style it */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+   backdrop-filter: blur(10px); /* Adjust blur intensity */
+
+}

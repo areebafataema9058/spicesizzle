@@ -1,0 +1,106 @@
+/* General Container */
+.service-container {
+  background-color: #1a202c; /* dark gray background */
+  color: white;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Individual Card */
+.service-card {
+  background-color: #2d3748; /* slightly lighter gray */
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  background-color: #4a5568; /* darkens on hover */
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  color: #cbd5e0; /* light gray text */
+  margin-bottom: 1.5rem;
+}
+
+.service-button {
+  padding: 0.75rem 1.25rem;
+  background-color:white;
+  color: #2d3748; /* dark text */
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.service-button:hover {
+  background-color: white;
+}
+/* Media Queries for Responsiveness */
+
+/* For small screens */
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 2rem;
+  }
+  .service-cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust for smaller screens */
+  }
+  .service-card {
+    padding: 1rem; /* Less padding on smaller screens */
+  }
+  .service-button {
+    font-size: 0.9rem; /* Smaller button text on small screens */
+  }
+}
+
+/* For extra-small screens */
+@media (max-width: 480px) {
+  .service-title {
+    font-size: 1.75rem;
+  }
+  .service-cards {
+    grid-template-columns: 1fr; /* Single column layout on very small screens */
+  }
+  .service-card {
+    padding: 0.75rem; /* Even smaller padding */
+  }
+  .service-button {
+    font-size: 0.85rem; /* Further smaller button text */
+  }
+}

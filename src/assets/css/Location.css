@@ -1,0 +1,153 @@
+.reservation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color:#333;
+}
+
+.reservation-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.reservation-info h1 {
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+}
+
+.reservation-hours {
+  margin-top: 20px;
+}
+
+.reservation-hours h3 {
+  font-size: 20px;
+  color:white;
+}
+
+.reservation-hours p {
+  font-size: 16px;
+  color: white;
+}
+
+.reservation-form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.reservation-form {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.reservation-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.reservation-form button:hover {
+  background-color:gray;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .reservation-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .reservation-info {
+    padding: 15px;
+  }
+
+  .reservation-form-section {
+    padding: 15px;
+  }
+
+  .reservation-form {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .reservation-info h1 {
+    font-size: 28px;
+  }
+
+  .reservation-hours h3 {
+    font-size: 18px;
+  }
+
+  .reservation-hours p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reservation-info h1 {
+    font-size: 24px;
+  }
+
+  .reservation-hours h3 {
+    font-size: 16px;
+  }
+
+  .reservation-hours p {
+    font-size: 12px;
+  }
+
+  .reservation-form h2 {
+    font-size: 20px;
+  }
+
+  .reservation-form label {
+    font-size: 12px;
+  }
+
+  .reservation-form input,
+  .reservation-form select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .reservation-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

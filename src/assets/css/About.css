@@ -1,0 +1,159 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  /* background: #111; */
+  color: white;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-content h5 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.about-content h2 span {
+  color:white;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.order-btn, .read-btn {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.order-btn {
+  background:white;
+  color: black;
+}
+
+.read-btn {
+  background: transparent;
+  /* border: 2px solid black; */
+  box-shadow:2px 2px 5px black;
+   backdrop-filter: blur(10px);
+  color:white;
+}
+
+.order-btn:hover, .read-btn:hover {
+  opacity: 0.8;
+}
+
+.about-images {
+  flex: 1;
+  position: relative;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.experience-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .about-content {
+    max-width: 60%;
+  }
+  .about-images {
+    flex: 1 1 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-us {
+    padding: 30px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-images {
+    flex: 1 1 100%;
+    margin-top: 20px;
+  }
+
+  .order-btn, .read-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .experience-badge {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .order-btn, .read-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .experience-badge {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+
