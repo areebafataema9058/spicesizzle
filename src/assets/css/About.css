@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 .about-us {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-  /* background: #111; */
   color: white;
 }
 
@@ -16,20 +18,23 @@
   color: white;
   font-size: 16px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .about-content h2 {
   font-size: 36px;
   margin: 10px 0;
+  font-weight: 600;
 }
 
 .about-content h2 span {
-  color:white;
+  color: white;
 }
 
 .about-content p {
   font-size: 18px;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .about-content ul {
@@ -47,25 +52,28 @@
 }
 
 .order-btn, .read-btn {
+  font-family: 'Poppins', sans-serif;
   padding: 12px 20px;
   margin-right: 10px;
   border: none;
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .order-btn {
-  background:white;
+  background: white;
   color: black;
+  border-radius: 6px;
 }
 
 .read-btn {
   background: transparent;
-  /* border: 2px solid black; */
-  box-shadow:2px 2px 5px black;
-   backdrop-filter: blur(10px);
-  color:white;
+  box-shadow: 2px 2px 5px black;
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 6px;
 }
 
 .order-btn:hover, .read-btn:hover {
@@ -90,7 +98,9 @@
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 14px;
+  font-weight: 600;
 }
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .about-content {
@@ -155,5 +165,3 @@
     padding: 8px;
   }
 }
-
-

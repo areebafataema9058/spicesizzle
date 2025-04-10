@@ -1,9 +1,14 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply the font family to the entire footer */
 footer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color:black;
+  background-color: black;
   color: white;
+  font-family: 'Poppins', sans-serif; /* Adding Poppins font */
 }
 
 .footer-left {
@@ -15,6 +20,7 @@ footer {
   margin: 0;
   padding: 10px 0;
   font-size: 24px;
+  font-weight: 600; /* Make the heading bold */
 }
 
 .contact-info {
@@ -37,7 +43,13 @@ footer {
 
 .social-links a {
   margin-right: 10px;
- color: white;
+  color: white;
+  font-weight: 500; /* Slightly bolder font for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 .footer-right {
@@ -50,6 +62,7 @@ footer {
 footer img {
   vertical-align: middle;
 }
+
 @media (max-width: 480px) {
   footer {
     padding: 10px; /* Reduce padding on very small screens */

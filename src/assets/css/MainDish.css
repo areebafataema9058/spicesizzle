@@ -7,14 +7,14 @@
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
-  color: white;
+  color:white;
 }
 
 /* Heading */
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #fff;
+  color: white;
   font-weight: 600;
 }
 

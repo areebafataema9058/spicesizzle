@@ -2,10 +2,13 @@ import React from "react";
 import "../assets/css/About.css";
 import restaurantImage from "../assets/images/resturant.jpg";
 import DailyOffers from "../components/DailyOffers";
+import IconList from "../components/IconList";
+
 
 const About = () => {
   return (
     <>
+   
       <section className="about-us">
         <div className="about-content">
           <h5>ABOUT US</h5>
@@ -38,7 +41,10 @@ const About = () => {
       </section>
 
       {/* Place the DailyOffers component here */}
+      
+      <IconList />
       <DailyOffers />
+
     </>
   );
 };

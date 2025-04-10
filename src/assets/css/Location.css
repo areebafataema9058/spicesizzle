@@ -1,9 +1,19 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .reservation-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-  background-color:#333;
+  background-color: #333;
 }
 
 .reservation-info {
@@ -23,7 +33,7 @@
 
 .reservation-hours h3 {
   font-size: 20px;
-  color:white;
+  color: white;
 }
 
 .reservation-hours p {
@@ -52,11 +62,12 @@
   text-align: center;
   margin-bottom: 20px;
   color: #222;
+  font-weight: 600;
 }
 
 .reservation-form label {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   color: #333;
   display: block;
   margin-top: 10px;
@@ -81,11 +92,13 @@
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
+  font-weight: 600;
 }
 
 .reservation-form button:hover {
-  background-color:gray;
+  background-color: #555;
 }
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .reservation-container {

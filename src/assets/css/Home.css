@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Oswald:wght@500&family=Playfair+Display:wght@700&family=Raleway:wght@500&display=swap');
+
+body {
+}
+
 .home-container {
   display: flex;
   align-items: center;
@@ -20,7 +25,7 @@
 
 .heading {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -40,6 +45,7 @@
   border: none;
   cursor: pointer;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 .book-btn {
@@ -51,8 +57,8 @@
   background: transparent;
   color: white;
   border: 1px solid white;
-   box-shadow:2px 2px 5px black;
-   backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 5px black;
+  backdrop-filter: blur(10px);
 }
 
 .image-section {
@@ -65,22 +71,21 @@
 
 .main-image {
   width: 100%;
-  border-radius: 50% / 30%; /* Creates an oval shape */
-   object-fit: cover;
+  border-radius: 50% / 30%;
+  object-fit: cover;
   position: relative;
   margin-right: 100px;
-  
 }
 
 .side-images {
   position: absolute;
   width: 100%;
   height: 100%;
-   margin-right:180px;
+  margin-right: 180px;
 }
 
 .side-image {
-  width: 80px; /* Adjust as needed */
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 2px solid white;
@@ -89,16 +94,17 @@
 }
 
 .side-image:first-child {
-  top: 5%; /* Moves slightly towards the upper right curve */
+  top: 5%;
   right: 5%;
   transform: translate(50%, -50%);
 }
 
 .side-image:last-child {
-  bottom: 5%; /* Moves slightly towards the lower left curve */
+  bottom: 5%;
   left: 5%;
   transform: translate(-50%, 50%);
 }
+
 /* Responsive styles */
 @media (max-width: 1200px) {
   .home-container {
